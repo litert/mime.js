@@ -1,6 +1,6 @@
 /.git/
 /.vscode/
-/dist/update.js
+/dist/update.*
 /node_modules/
 /sources/update.ts
 /.gitignore
