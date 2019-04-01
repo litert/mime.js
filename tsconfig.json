@@ -4,10 +4,11 @@
         "removeComments": true,
         "preserveConstEnums": true,
         "outDir": "dist/",
-        "sourceMap": false,
+        "sourceMap": true,
         "target": "es2018",
         "strict": true,
-        "declaration": false, // d.ts
+        "declaration": true, // d.ts
+        "declarationMap": true,
         "newLine": "LF"
     }
 }
