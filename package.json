@@ -1,6 +1,6 @@
 {
   "name": "@litert/mime-types",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Get MIME type based on file name.",
   "keywords": [
     "litert",

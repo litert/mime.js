@@ -1,3 +1,5 @@
+// npm publish --access=public
+
 let extJson = require(__dirname + "/../mime.json");
 
 export function get(fpath: string): string {
