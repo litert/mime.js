@@ -1,0 +1,27 @@
+{
+  "name": "@litert/mime-types",
+  "version": "0.0.1",
+  "description": "Get MIME type based on file name.",
+  "keywords": [
+    "litert",
+    "mime"
+  ],
+  "main": "./dist/index.js",
+  "author": "hanguoshuai",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litert/mime-types.git"
+  },
+  "bugs": {
+    "url": "https://github.com/litert/mime-types/issues"
+  },
+  "types": "./dist/index.d.ts",
+  "typings": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^11.12.2"
+  }
+}
