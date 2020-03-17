@@ -4,9 +4,9 @@
 [![npm version](https://img.shields.io/npm/v/@litert/mime/dev.svg)](https://www.npmjs.com/package/@litert/mime "Development Version")
 [![License](https://img.shields.io/github/license/litert/mime.js.svg)](https://github.com/litert/mime.js/blob/master/LICENSE)
 [![node](https://img.shields.io/node/v/@litert/mime.svg?colorB=brightgreen)](https://nodejs.org/dist/latest-v10.x/)
-[![GitHub issues](https://img.shields.io/github/issues/litert/mime.svg)](https://github.com/litert/mime/issues)
-[![GitHub Releases](https://img.shields.io/github/release/litert/mime.svg)](https://github.com/litert/mime/releases "Stable Release")
-[![GitHub Pre-Releases](https://img.shields.io/github/release/litert/mime/all.svg)](https://github.com/litert/mime/releases "Pre-Release")
+[![GitHub issues](https://img.shields.io/github/issues/litert/mime.js.svg)](https://github.com/litert/mime.js/issues)
+[![GitHub Releases](https://img.shields.io/github/release/litert/mime.js.svg)](https://github.com/litert/mime.js/releases "Stable Release")
+[![GitHub Pre-Releases](https://img.shields.io/github/release/litert/mime.js/all.svg)](https://github.com/litert/mime.js/releases "Pre-Release")
 
 Get MIME type based on file name.
 
