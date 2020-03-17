@@ -1,9 +1,11 @@
 /.git/
 /.vscode/
-/dist/update.*
+/dist/test*
+/dist/update*
 /node_modules/
+/sources/test-node.ts
 /sources/update.ts
+/test/
 /.gitignore
 /.npmignore
 /tsconfig.json
-/tslint.json

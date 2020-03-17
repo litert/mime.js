@@ -1,14 +1,14 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
+        "module": "CommonJS",
         "removeComments": true,
         "preserveConstEnums": true,
         "outDir": "dist/",
         "sourceMap": true,
-        "target": "es2018",
+        "target": "es5",
         "strict": true,
-        "declaration": true, // d.ts
-        "declarationMap": true,
+        "declaration": true,        // d.ts
+        "declarationMap": false,
         "newLine": "LF"
     }
 }

@@ -6,21 +6,26 @@ https.request({
     port: 443,
     path: "/jshttp/mime-db/master/db.json",
     method: "GET"
-}, (res) => {
-    let rstr = "";
+}, function(res) {
+    let netStr = "";
     res.on("data", (chunk: Buffer) => {
-        rstr += chunk.toString();
+        netStr += chunk.toString();
     }).on("end", () => {
-        let json = JSON.parse(fs.readFileSync(__dirname + "/../mime.json").toString());
-        let rjson = JSON.parse(rstr);
-        for (let mime in rjson) {
-            let item = rjson[mime];
-            if (item.extensions) {
-                for (let ext of item.extensions) {
-                    json[ext] = mime;
+        let localData = JSON.parse(fs.readFileSync(__dirname + "/../mime.json").toString());
+        let netData = JSON.parse(netStr);
+        for (let mime in netData) {
+            let netItem = netData[mime];
+            if (netItem.extensions) {
+                for (let ext of netItem.extensions) {
+                    localData[ext] = {
+                        "mime": mime,
+                        "compressible": netItem.compressible ?? false
+                    };
                 }
             }
         }
-        fs.writeFileSync(__dirname + "/../mime.json", JSON.stringify(json, undefined, 4));
+        fs.writeFileSync(__dirname + "/../mime.json", JSON.stringify(localData));
     });
-}).on("error", (e) => console.error(`[Error]: ${e.stack}`)).end();
+}).on("error", function(e) {
+    console.error(`[Error]: ${e.stack}`);
+}).end();

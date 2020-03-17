@@ -1,3 +1,4 @@
 /.vscode/
-/dist/
+/dist/test*
+/dist/update*
 /node_modules/
