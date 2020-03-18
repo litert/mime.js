@@ -32,7 +32,7 @@ If you must use it on browser, please use CDN:
 
 Recommended: https://cdn.jsdelivr.net/npm/@litert/mime@0.1.0/dist/index.min.js, which will reflect the latest version as soon as it is published to npm. You can also browse the source of the npm package at https://cdn.jsdelivr.net/npm/@litert/mime/.
 
-Also available on [unpkg](https://unpkg.com/@litert/mime@0.1.0/dist/index.min.js).
+Also available on [unpkg](https://unpkg.com/@litert/mime@0.1.0/dist/index.js).
 
 In the example, the mime.js library is loaded using the loader.js library:
 
