@@ -1,10 +1,11 @@
 {
   "name": "@litert/mime",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Get MIME type based on file name.",
   "keywords": [
     "litert",
-    "mime"
+    "mime",
+    "extension"
   ],
   "main": "./dist/index.js",
   "author": "hanguoshuai",

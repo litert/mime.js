@@ -5,12 +5,14 @@ function getData(path) {
     var lio = path.lastIndexOf(".");
     var ext = (lio === -1 ? path : path.slice(lio + 1)).toLowerCase();
     if (mimeData[ext]) {
+        mimeData[ext].extension = ext;
         return mimeData[ext];
     }
     else {
         return {
             "mime": "application/octet-stream",
-            "compressible": false
+            "compressible": false,
+            "extension": ext
         };
     }
 }

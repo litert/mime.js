@@ -6,8 +6,9 @@ export interface IData {
 }
 
 export interface IDataItem {
-    "mime": string,
-    "compressible": boolean
+    "mime": string;
+    "compressible": boolean;
+    "extension": string;
 }
 
 let mimeData: IData = require("../mime.json");
@@ -20,11 +21,13 @@ export function getData(path: string): IDataItem {
    let lio = path.lastIndexOf(".");
    let ext: string = (lio === -1 ? path : path.slice(lio + 1)).toLowerCase();
    if (mimeData[ext]) {
+       mimeData[ext].extension = ext;
        return mimeData[ext];
    } else {
        return {
            "mime": "application/octet-stream",
-           "compressible": false
+           "compressible": false,
+           "extension": ext
        };
    }
 }
