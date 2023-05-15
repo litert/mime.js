@@ -1,9 +1,10 @@
 /.git/
 /.vscode/
-/dist/test*
+/dist/test-*
 /dist/update*
 /node_modules/
-/sources/test-node.ts
+/sources/source.json
+/sources/test-*
 /sources/update.ts
 /test/
 /.gitignore

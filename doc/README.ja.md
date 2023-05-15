@@ -15,19 +15,15 @@
     </a>
 </p>
 
-Get MIME type based on file name, path, and extension.
+ファイル名、パス、拡張子から mime タイプを取得します。
 
-> This repository doesn't require frequent updates, so even if it hasn't been updated for a long time, as long as it still exists, it means it's available. We'll keep an eye on whether it can function properly in the latest Node and browser environments.
+> このライブラリは頻繁に更新する必要がないため、長い間更新されていなくても、存在している限り使用可能です。私たちは常に最新の Node およびブラウザ環境で正常に動作するかどうかを確認しています。
 
-## Languages
-
-[简体中文](doc/README.sc.md) | [繁體中文](doc/README.tc.md) | [日本語](doc/README.ja.md)
-
-## Installation
+## インストール
 
 ### NPM
 
-In the Node.js environment, you can install directly using NPM:
+次の npm コマンドを使用して直接インストールできます。
 
 ```sh
 $ npm i @litert/mime --save
@@ -35,15 +31,15 @@ $ npm i @litert/mime --save
 
 ### CDN
 
-If you're using it in a browser, you can utilize the CDN mode.
+ブラウザで使用する場合は、CDN モードを使用できます：
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/@litert/loader@3.5.0/dist/loader.min.js?path=index&npm={'@litert/mime':'0.1.2'}"></script>
 ```
 
-## Usage
+## 使用
 
-Demo code is written using TypeScript.
+デモコードは TypeScript で記述されています。
 
 ```typescript
 import * as mime from "@litert/mime";
@@ -57,18 +53,18 @@ mime.getData("ext.dodooh");         // {"mime": "application/octet-stream", "com
 mime.getMime("root/index.css");     // text/css
 ```
 
-## Test
+## サンプル
 
 ### Node
 
-Once it's compiled correctly, you can run the sample code in the terminal by using node ./dist/test-node.
+コンパイル後に、ターミナルで `node ./dist/test-node` を使用してサンプルコードを実行できます。
 
-### Browser
+### ブラウザ
 
-To view the examples, simply access the `test/` directory in your browser.
+`test/` ディレクトリにアクセスすると、サンプルを表示できます。
 
-[Click here to view the examples online](https://litert.github.io/mime.js/test/)
+[ここをクリックしてオンラインでサンプルを表示](https://litert.github.io/mime.js/test/)
 
-## License
+## ライセンス
 
-This library is published under [Apache-2.0](./LICENSE) license.
+このライブラリは [Apache-2.0](../LICENSE) ライセンスで提供されています。

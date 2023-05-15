@@ -6,28 +6,28 @@ export interface IData {
 }
 
 export interface IDataItem {
-    "mime": string;
-    "compressible": boolean;
-    "extension": string;
+    'mime': string;
+    'compressible': boolean;
+    'extension': string;
 }
 
-let mimeData: IData = require("../mime.json");
+let mimeData: IData = require('../mime.json');
 
 /**
 * --- 根据后缀、文件名或路径获取 mime 类型和是否可压缩 ---
 * @param path 后缀、文件名或路径
 */
 export function getData(path: string): IDataItem {
-   let lio = path.lastIndexOf(".");
+   let lio = path.lastIndexOf('.');
    let ext: string = (lio === -1 ? path : path.slice(lio + 1)).toLowerCase();
    if (mimeData[ext]) {
        mimeData[ext].extension = ext;
        return mimeData[ext];
    } else {
        return {
-           "mime": "application/octet-stream",
-           "compressible": false,
-           "extension": ext
+           'mime': "application/octet-stream",
+           'compressible': false,
+           'extension': ext
        };
    }
 }
@@ -37,6 +37,6 @@ export function getData(path: string): IDataItem {
  * @param path 后缀、文件名或路径
  */
 export function getMime(path: string): string {
-    return getData(path)["mime"];
+    return getData(path)['mime'];
 }
 

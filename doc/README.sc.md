@@ -15,19 +15,15 @@
     </a>
 </p>
 
-Get MIME type based on file name, path, and extension.
+根据文件名、路径、扩展名获取 mime 类型。
 
-> This repository doesn't require frequent updates, so even if it hasn't been updated for a long time, as long as it still exists, it means it's available. We'll keep an eye on whether it can function properly in the latest Node and browser environments.
+> 本库不需要经常更新，因此即使很久没有更新，只要它依然存在，则表示他是可用的。我们会持续关注其是否可以正常运行在最新的 Node 和浏览器环境。
 
-## Languages
-
-[简体中文](doc/README.sc.md) | [繁體中文](doc/README.tc.md) | [日本語](doc/README.ja.md)
-
-## Installation
+## 安装
 
 ### NPM
 
-In the Node.js environment, you can install directly using NPM:
+你可以直接通过 npm 命令进行安装。
 
 ```sh
 $ npm i @litert/mime --save
@@ -35,15 +31,15 @@ $ npm i @litert/mime --save
 
 ### CDN
 
-If you're using it in a browser, you can utilize the CDN mode.
+如果你在浏览器中使用，可以使用 CDN 模式：
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/@litert/loader@3.5.0/dist/loader.min.js?path=index&npm={'@litert/mime':'0.1.2'}"></script>
 ```
 
-## Usage
+## 使用
 
-Demo code is written using TypeScript.
+演示代码使用 Typescript 语言编写。
 
 ```typescript
 import * as mime from "@litert/mime";
@@ -57,18 +53,18 @@ mime.getData("ext.dodooh");         // {"mime": "application/octet-stream", "com
 mime.getMime("root/index.css");     // text/css
 ```
 
-## Test
+## 示例
 
 ### Node
 
-Once it's compiled correctly, you can run the sample code in the terminal by using node ./dist/test-node.
+正确编译后，在终端中使用 `node ./dist/test-node` 就可以运行示例代码。
 
-### Browser
+### 浏览器
 
-To view the examples, simply access the `test/` directory in your browser.
+在浏览器中访问 `test/` 目录即可查看示例。
 
-[Click here to view the examples online](https://litert.github.io/mime.js/test/)
+[点击此处在线查看示例](https://litert.github.io/mime.js/test/)
 
-## License
+## 许可
 
-This library is published under [Apache-2.0](./LICENSE) license.
+本库使用 [Apache-2.0](../LICENSE) 许可。

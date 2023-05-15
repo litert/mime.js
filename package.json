@@ -1,7 +1,7 @@
 {
   "name": "@litert/mime",
-  "version": "0.1.1",
-  "description": "Get MIME type based on file name.",
+  "version": "0.1.2",
+  "description": "Get MIME type based on file name, path, and extension.",
   "keywords": [
     "litert",
     "mime",
@@ -17,13 +17,12 @@
   "bugs": {
     "url": "https://github.com/litert/mime.js/issues"
   },
-  "types": "./dist/index.d.ts",
-  "typings": "./dist/index.d.ts",
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=14.0.0"
   },
   "devDependencies": {
-    "@types/node": "^13.9.1",
-    "typescript": "^3.8.3"
+    "@litert/mime": "^0.1.1",
+    "@types/node": "^20.1.4",
+    "typescript": "^5.0.4"
   }
 }
