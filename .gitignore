@@ -1,4 +1,6 @@
 /.vscode/
 /dist/test-node*
+/dist/*.d.ts
+!/dist/index.d.ts
 /dist/update*
 /node_modules/

@@ -34,7 +34,7 @@ $ npm i @litert/mime --save
 如果你在瀏覽器中使用，可以使用 CDN 模式：
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@litert/loader@3.5.0/dist/loader.min.js?path=index&npm={'@litert/mime':'0.1.2'}"></script>
+<script src="https://cdn.jsdelivr.net/npm/@litert/loader@3.5.0/dist/loader.min.js?path=index&npm={'@litert/mime':'0.1.3'}"></script>
 ```
 
 ## 使用

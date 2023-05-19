@@ -1,6 +1,6 @@
 {
   "name": "@litert/mime",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Get MIME type based on file name, path, and extension.",
   "keywords": [
     "litert",
@@ -21,7 +21,7 @@
     "node": ">=14.0.0"
   },
   "devDependencies": {
-    "@litert/mime": "^0.1.1",
+    "@litert/mime": "^0.1.3",
     "@types/node": "^20.1.4",
     "typescript": "^5.0.4"
   }
