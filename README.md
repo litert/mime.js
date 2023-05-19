@@ -61,7 +61,7 @@ mime.getMime("root/index.css");     // text/css
 
 ### Node
 
-Once it's compiled correctly, you can run the sample code in the terminal by using node ./dist/test-node.
+Once it's compiled correctly, you can run the sample code in the terminal by using `node ./dist/test-node`.
 
 ### Browser
 
